@@ -10,7 +10,7 @@
 
 body {
   height: 100vh;
-  min-height: 400px;
+
   overflow: auto;
   background-color: #f4f4f4;
   font-family: var(--primary-font);
@@ -23,6 +23,8 @@ body {
 
 .body-container {
   width: 75vw;
+  min-height: 440px !important;
+  min-width: 300px;
 }
 
 header {
@@ -179,7 +181,7 @@ button:focus {
   outline: none;
 }
 
-/* media querries */
+/* media queries */
 
 @media (max-width: 992px) {
   header div {
@@ -312,9 +314,14 @@ button:focus {
 }
 
 @media (max-width: 576px) {
+  header {
+    min-width: 250px;
+    min-height: 170px;
+  }
   header div {
     height: 100%;
     width: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -330,6 +337,11 @@ button:focus {
   }
   header img {
     display: none;
+  }
+
+  main {
+    min-width: 250px;
+    min-height: 170px;
   }
 
   main .left-container {
